@@ -9,3 +9,17 @@ execute:
 ```{r}
 suppressPackageStartupMessages(library(tidyverse))
 ```
+
+```{r}
+library(ggplot2)
+
+ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
+  geom_point() +
+  theme_minimal() +
+  labs(
+    title = "Engine Displacement vs Highway MPG",
+    x = "Engine Displacement (liters)",
+    y = "Highway MPG",
+    color = "Car Class"
+  )
+```
