@@ -1,6 +1,11 @@
 ---
-title: "Untitled"
+title: "quarto-2"
 Author: Gokul Patibandla
 format: html
+execute:
+  echo: false
 ---
 
+```{r}
+suppressPackageStartupMessages(library(tidyverse))
+```
